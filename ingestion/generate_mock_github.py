@@ -40,6 +40,9 @@ def generate_mock_events(num_events):
         events.append(event)
     return events
 
+print("Generating mock github events...")
 Path("data/raw").mkdir(parents=True,exist_ok=True)
 with open("./data/raw/github_events.json","w") as f:
     json.dump(generate_mock_events(10000),f,indent=2)
+
+print("Mock github events generated successfully")
