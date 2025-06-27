@@ -42,6 +42,6 @@ def generate_mock_events(num_events):
 print("Generating mock jenkins events...")
 Path("data/raw").mkdir(parents=True,exist_ok=True)
 with open("./data/raw/jenkins_events.json","w") as f:
-    json.dump(generate_mock_events(1000),f,indent=2)
+    json.dump(generate_mock_events(10000),f,indent=2)
 
 print("Mock jenkins events generated successfully")
