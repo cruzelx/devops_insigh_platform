@@ -1,0 +1,7 @@
+pyspark
+pandaspyarrow
+py4j
+psycopg2-binary
+minio
+streamlit
+Faker
